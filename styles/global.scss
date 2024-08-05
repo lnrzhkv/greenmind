@@ -1,8 +1,8 @@
 @import "./lib/normalize";
 @import "./lib/swiper";
 @import "./ui/container";
-// @import "./components/container";
-@import "./sections/container";
+@import "./components/container";
+@import "sections/container";
 
 * {
   box-sizing: border-box;
@@ -27,4 +27,42 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.title-wrapper {
+  @include flex;
+  gap: 24px;
+  flex-direction: column;
+  width: 209px;
+  height: 276px;
+
+  .title {
+    margin: 0;
+    @include font-popins(32px, 700);
+  }
+
+  .subtitle {
+    margin: 0;
+    @include font-popins(18px, 500);
+    color: var(--color-text-light);
+  }
 }

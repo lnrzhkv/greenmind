@@ -3,3 +3,11 @@
   justify-content: $j;
   align-items: $a;
 }
+
+@mixin font-popins($fsize: normal, $fweight: normal, $lh: normal, $ls: normal) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $fweight;
+  font-size: $fsize;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

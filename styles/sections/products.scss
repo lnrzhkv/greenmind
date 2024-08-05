@@ -1,0 +1,23 @@
+.products-wrapper {
+  padding: 100px 0;
+  @include flex(flex-start, flex-start);
+  gap: 34px;
+}
+
+.product-item {
+  .item-descr {
+    @include flex(center, flex-start);
+    gap: 8px;
+    flex-direction: column;
+    width: fit-content;
+
+    .product-name {
+      @include font-popins(18px, 500);
+    }
+
+    .product-price {
+      @include font-popins(18px, 500);
+      color: var(--color-text-light);
+    }
+  }
+}

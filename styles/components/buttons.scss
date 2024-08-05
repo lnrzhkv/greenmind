@@ -1,0 +1,19 @@
+.btn-primary {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 168px;
+  height: 51px;
+  border: none;
+  background: var(--color-primary);
+  @include font-popins(18px, 500);
+  gap: 10px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.btn-primary::after {
+  content: url(/images/icons/arrow.svg);
+  display: flex;
+  align-self: center;
+  height: 20px;
+}
